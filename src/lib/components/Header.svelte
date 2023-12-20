@@ -1,4 +1,4 @@
-<header>
+<header class="header">
   <div >
     <a class="branding" href="#home">
       <img class="logo" src="isologo2.svg" alt="" >
@@ -17,7 +17,7 @@
 </header>
 
 <style>
-  header {
+  .header {
     padding: 0.5rem var(--sides);
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
 
   
   @media (max-width: 900px) {
-    header {
+    .header {
       font-size: 0.8rem;
     }
     .branding {
@@ -75,7 +75,7 @@
     }
   }
   @media (max-width: 530px) {
-    header {
+    .header {
       font-size: 1.4rem;
       font-weight: 700;
       letter-spacing: 0.2rem;
