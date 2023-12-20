@@ -541,6 +541,7 @@
 		font-size: 2.8rem;
 		letter-spacing: 0.3rem;
 		text-align: center;
+		overflow-x: hidden;
 	}
 	.contact-header {
 		text-align: center;
@@ -556,8 +557,7 @@
 		position: absolute;
 		inset: 0;
 		z-index: -1;
-		width: 200%;
-		transform: translate(-30rem, 0);
+		width: 100%;
 	}
 	.contact-links {
 		margin-top: 4rem;

@@ -1,4 +1,4 @@
-<header class="header">
+<div class="header">
   <div >
     <a class="branding" href="#home">
       <img class="logo" src="isologo2.svg" alt="" >
@@ -14,7 +14,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-</header>
+</div>
 
 <style>
   .header {
@@ -29,7 +29,7 @@
     position: sticky;
     top: 0;
     font-size: 1.4rem;
-    z-index: 999;
+    z-index: 99;
   }
 
   /* BRANDING */
@@ -62,7 +62,7 @@
     text-shadow: 0 0 0.4rem rgb(170, 218, 202);
   }
 
-  
+
   @media (max-width: 900px) {
     .header {
       font-size: 0.8rem;
