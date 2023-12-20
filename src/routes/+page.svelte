@@ -112,15 +112,19 @@
 
 <!-- CONTACT SECTION -->
 <section class="contact" id="contact">
-	<h2 class="contact-header">¡¿Whut?!</h2>
-	<p>¿Were you expecting a form of something?</p>
-	<p>¿Why not making this more personal?</p>
-	<ul class="contact-links">
-		{#each contactLinks as { link, icon, name}}
-			<li><ContactButton linkRef={link} linkIcon={icon} linkName={name} /></li>
-		{/each}
-	</ul>
-	<h1 class="contact-title title">Contact me</h1>
+	<div class="contact-header-bk">
+		<h2 class="contact-header">¡¿Whut?!</h2>
+	</div>
+	<div class="contact-content">
+		<p>¿Were you expecting a form of something?</p>
+		<p>¿Why not making this more personal?</p>
+		<ul class="contact-links">
+			{#each contactLinks as { link, icon, name}}
+				<li><ContactButton linkRef={link} linkIcon={icon} linkName={name} /></li>
+			{/each}
+		</ul>
+		<h1 class="contact-title title">Contact me</h1>
+	</div>
 </section>
 
 <style>
@@ -535,15 +539,19 @@
 	/* -------------------- CONTACT ---------------------------- */
 
 	.contact {
-		max-width: var(--max-width);
-		margin: auto;
-		padding: 4rem 2rem;
+		padding-block: 4rem;
 		font-size: 2.8rem;
 		letter-spacing: 0.3rem;
 		text-align: center;
-		overflow-x: hidden;
+	}
+	.contact-header-bk {
+		background-color: var(--neutro);
 	}
 	.contact-header {
+		max-width: var(--max-width);
+		margin: auto;
+
+		padding-inline: 2rem;
 		text-align: center;
 		font-size: 3rem;
 		padding: 1.2rem;
@@ -551,13 +559,12 @@
 		isolation: isolate;
 		margin-bottom: 2.5rem;
 	}
-	.contact-header::after {
-		content: "";
-		background-color: var(--neutro);
-		position: absolute;
-		inset: 0;
-		z-index: -1;
-		width: 100%;
+	.contact-content {
+		max-width: var(--max-width);
+		padding-inline: 2rem;
+		margin: auto;
+
+
 	}
 	.contact-links {
 		margin-top: 4rem;
