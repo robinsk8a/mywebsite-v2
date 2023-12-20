@@ -1,0 +1,48 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CUSTOM STYLE RULES */
+
+:root {
+  --dark01: #071614;
+  --dark02: #072124;
+  --light01: #96d7e2;
+  --light02: #0DFB97;
+  --neutro: #1C4333;
+  --extra: #F2874B;
+
+  --sides: 4rem;
+  --max-width:90rem;
+  --home-title: clamp(2rem, 12.8vw, 12rem);
+
+  --bp-media01: 1140px;
+}
+
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background: var(--dark01);
+  color: var(--light01);
+}
+p {
+  font: 1.2rem;
+}
+
+
+}
+
+
